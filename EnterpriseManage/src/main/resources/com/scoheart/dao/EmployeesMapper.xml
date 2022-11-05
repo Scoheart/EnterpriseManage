@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.scoheart.dao.EmployeesMapper">
+
+    <resultMap id="EmployeesResultMap" type="Employees">
+        <id column="employee_id" property="employeeId"/>
+        <result column="employee_name" property="employeeName"/>
+        <result column="employee_sex" property="employeeSex"/>
+        <result column="employee_age" property="employeeAge"/>
+        <result column="employee_tel" property="employeeTel"/>
+        <result column="employee_email" property="employeeEmail"/>
+        <result column="employee_addr" property="employeeAddr"/>
+    </resultMap>
+
+    <select id="selectAllEmployees" resultMap="EmployeesResultMap" >
+        select * from tb_employees;
+    </select>
+</mapper>
