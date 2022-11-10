@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoheart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="https://kit.fontawesome.com/bb73e22459.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="shortcut"></div>
+            <nav>
+                <ul class="nav-left">
+                    <li><a href="https://www.baidu.com/">文具</a></li>
+                    <li><a href="https://www.baidu.com/">衣物</a></li>
+                    <li><a href="https://www.baidu.com/">药品</a></li>
+                    <li><a href="https://www.baidu.com/">数码</a></li>
+                    <li><a href="https://www.baidu.com/">食品</a></li>
+                    <li><a href="https://www.baidu.com/">书籍</a></li>
+                </ul>
+                <div class="search">
+                    <form action="" class="search-focused">
+                        <input type="text" class="search-text" placeholder="搜索">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </form>
+                </div>
+            </nav>
+        </header>
+            
+        <div class="body">
+            <div class="container">
+                <div class="left"></div>
+        
+                <div class="mid">
+                    <div class="hot-items">
+                        <div class="img-box">
+                            <img src="images/pexels-lukas-1420701.jpg" alt="">
+                        </div>
+                    </div>
+                    <h1> &nbsp;&nbsp;&nbsp;&nbsp;猜你喜欢</h1>
+                    <div id="recommend-items" class="recommend-items">
+                        <div class="card">
+                            <a href="https://www.baidu.com/" class="items-link">
+                                <div class="img-box">
+                                    <img src="images/1.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3>第一件物品</h3>
+                                    <p>百年老店，全新正品，物美价廉，免费退换，服务周到</p>
+                                    <p>￥: 100元</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="https://www.baidu.com/" class="items-link">
+                                <div class="img-box">
+                                    <img src="images/2.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3>第一件物品</h3>
+                                    <p>百年老店，全新正品，物美价廉，免费退换，服务周到</p>
+                                    <p>￥: 100元</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="https://www.baidu.com/" class="items-link">
+                                <div class="img-box">
+                                    <img src="images/3.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3>第一件物品</h3>
+                                    <p>百年老店，全新正品，物美价廉，免费退换，服务周到</p>
+                                    <p>￥: 100元</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="https://www.baidu.com/" class="items-link">
+                                <div class="img-box">
+                                    <img src="images/pexels-lukas-1420701.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3>第一件物品</h3>
+                                    <p>百年老店，全新正品，物美价廉，免费退换，服务周到</p>
+                                    <p>￥: 100元</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="https://www.baidu.com/" class="items-link">
+                                <div class="img-box">
+                                    <img src="images/pexels-pixabay-35888.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3>第一件物品</h3>
+                                    <p>百年老店，全新正品，物美价廉，免费退换，服务周到</p>
+                                    <p>￥: 100元</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="card" class="card">
+                            <a href="https://www.baidu.com/" class="items-link">
+                                <div class="img-box">
+                                    <img src="images/5.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3>第一件物品</h3>
+                                    <p>百年老店，全新正品，物美价廉，免费退换，服务周到</p>
+                                    <p>￥: 100元</p>
+                                </div>
+                            </a>
+                        </div>
+                       
+                        
+                    </div>    
+                </div>
+                
+                <div class="right">
+                    <!-- <aside>
+                        <div>消息</div>
+                        <div>客服</div>
+                        <div>反馈</div>
+                        <div>举报</div>
+                    </aside> -->
+                </div>
+            </div>
+        </div>
+
+        <footer>我是尾部</footer>
+    </div>
+
+
+
+    <script>
+        var div1 = document.createElement("div");
+        var class_div1 = document.createAttribute("class");
+        class_div1.value = "card";
+        div1.setAttribute(class_div1);
+
+        var a  = document.createElement("a");
+        var class_a = document.createAttribute("class");
+        class_a.value = "items-link";
+
+        div1.appendChild(a);
+
+        var div2 = document.createElement("div");
+        var class_div2 = document.createAttribute("class");
+        class_div2.value = "img-box";
+        div2.setAttribute(class_div2);
+
+        var div3 = document.createElement("div");
+        var class_div3 = document.createAttribute("class");
+        class_div3.value = "content";
+        div3.setAttribute(class_div3);
+
+        var h3 = document.createElement("h3");
+        var text = document.createTextNode("第一件物品")
+        div3.appendChild(h3);
+        h3,appendChild(text);
+
+        a.appendChild(div2);
+        a.appendChild(div3);
+        window.onload =function(){
+             document.getElementById("card").write(div1);
+        }
+    </script>
+</body>
+</html>
